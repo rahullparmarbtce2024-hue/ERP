@@ -1,0 +1,6 @@
+cd ../frontend
+npm create vite@latest . -- --template react
+npm install tailwindcss @tailwindcss/vite axios zustand react-router-dom \
+  recharts framer-motion react-hot-toast react-hook-form lucide-react \
+  @tanstack/react-query date-fns qrcode.react
+npx tailwindcss init -p
