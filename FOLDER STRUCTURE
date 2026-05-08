@@ -1,0 +1,91 @@
+college-erp/
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py              # FastAPI app entry
+│   │   ├── config.py            # Settings from .env
+│   │   ├── database.py          # DB connection
+│   │   ├── models/              # SQLAlchemy ORM models
+│   │   │   ├── user.py
+│   │   │   ├── student.py
+│   │   │   ├── faculty.py
+│   │   │   ├── attendance.py
+│   │   │   ├── fees.py
+│   │   │   ├── hostel.py
+│   │   │   ├── exam.py
+│   │   │   ├── timetable.py
+│   │   │   ├── event.py
+│   │   │   ├── notification.py
+│   │   │   ├── feedback.py
+│   │   │   └── gatepass.py
+│   │   ├── schemas/             # Pydantic request/response schemas
+│   │   │   ├── auth.py
+│   │   │   ├── student.py
+│   │   │   └── ...
+│   │   ├── routers/             # API routes
+│   │   │   ├── auth.py
+│   │   │   ├── students.py
+│   │   │   ├── faculty.py
+│   │   │   ├── attendance.py
+│   │   │   ├── fees.py
+│   │   │   ├── hostel.py
+│   │   │   ├── exams.py
+│   │   │   ├── timetable.py
+│   │   │   ├── events.py
+│   │   │   ├── notifications.py
+│   │   │   ├── admin.py
+│   │   │   └── feedback.py
+│   │   ├── services/            # Business logic
+│   │   │   ├── auth_service.py
+│   │   │   ├── email_service.py
+│   │   │   ├── qr_service.py
+│   │   │   └── pdf_service.py
+│   │   └── middleware/
+│   │       ├── auth_middleware.py
+│   │       └── rbac.py
+│   ├── alembic/                 # DB migrations
+│   ├── tests/
+│   ├── .env
+│   ├── requirements.txt
+│   └── Dockerfile
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── main.jsx
+│   │   ├── App.jsx
+│   │   ├── api/                 # Axios API calls
+│   │   │   ├── auth.js
+│   │   │   ├── students.js
+│   │   │   └── ...
+│   │   ├── components/          # Reusable components
+│   │   │   ├── Sidebar.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── StatCard.jsx
+│   │   │   ├── DataTable.jsx
+│   │   │   ├── NotificationBell.jsx
+│   │   │   └── ProtectedRoute.jsx
+│   │   ├── pages/               # One page per module
+│   │   │   ├── Login.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Students.jsx
+│   │   │   ├── Attendance.jsx
+│   │   │   ├── Fees.jsx
+│   │   │   ├── Hostel.jsx
+│   │   │   ├── Exams.jsx
+│   │   │   ├── Events.jsx
+│   │   │   ├── Timetable.jsx
+│   │   │   └── Admin.jsx
+│   │   ├── store/               # Zustand state management
+│   │   │   ├── authStore.js
+│   │   │   └── uiStore.js
+│   │   ├── hooks/
+│   │   └── utils/
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   ├── package.json
+│   └── Dockerfile
+│
+├── docker-compose.yml
+├── .env.example
+└── README.md
