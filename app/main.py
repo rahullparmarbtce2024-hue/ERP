@@ -18,7 +18,6 @@ for router in [auth.router, students.router, faculty.router, attendance.router,
 @app.get("/api/health")
 def health(): return {"status": "ok", "version": "1.0.0"}
   # Run backend
-uvicorn app.main:app --reload --port 8000
 # Visit: http://localhost:8000/api/docs  (auto Swagger UI)
 from fastapi import FastAPI
 app = FastAPI()
