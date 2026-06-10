@@ -16,3 +16,4 @@ cloudinary==1.39.1
 emails==0.6
 celery==5.4.0
 redis==5.0.4
+gunicorn==22.0.0
